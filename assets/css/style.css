@@ -51,6 +51,13 @@
 /*-------------------------- 
       Global Styles
 ---------------------------*/
+:root {
+  --theme-red: #ff0000;
+  --theme-black: #222;
+  --header-subtitle: #8a8a8a;
+  --list-items: rgb(34, 34, 34);
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -870,7 +877,7 @@ select {
 }
 
 .bg-secondary {
-  background-color: #fdb900 !important;
+  background-color: #222 !important;
 }
 
 .bg-img {
@@ -968,7 +975,8 @@ h6 {
   position: relative;
   font-size: 15px;
   font-weight: 700;
-  color: #fdb900;
+  color: var(--header-subtitle);
+  /* color: var(--theme-red); */
   display: block;
   margin-bottom: 18px;
 }
@@ -977,12 +985,14 @@ h6 {
   position: relative;
   font-size: 34px;
   margin-bottom: 20px;
+  color: var(--theme-black);
 }
 
 .heading__desc {
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 0;
+  color: var(--header-subtitle);
 }
 
 .heading-layout2 .heading__title {
@@ -1284,7 +1294,7 @@ h6 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #fdb900;
+  background-color: var(--theme-red);
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: right center;
@@ -1304,7 +1314,7 @@ h6 {
 }
 
 .btn__primary {
-  background-color: #0e2b5c;
+  background-color: var(--theme-black);
   color: #ffffff;
 }
 
@@ -1852,8 +1862,9 @@ textarea.form-control {
   position: relative;
   padding-left: 32px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: normal;
   margin-bottom: 9px;
+  color: var(--theme-black);
 }
 
 .list-items li:before {
@@ -1870,7 +1881,7 @@ textarea.form-control {
   text-align: center;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #fdb900;
+  background-color: var(--theme-red);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -5910,7 +5921,7 @@ textarea.form-control {
 }
 
 .counter-item .counter {
-  color: #fdb900;
+  color: var(--theme-red);
   font-family: "Barlow", sans-serif;
   font-size: 60px;
   font-weight: 600;
@@ -5923,6 +5934,7 @@ textarea.form-control {
   font-weight: 700;
   margin-bottom: 0;
   padding-right: 40px;
+  color: var(--header-subtitle);
 }
 
 .counter-light .counter-item .counter,
@@ -6315,7 +6327,8 @@ textarea.form-control {
 }
 
 .about-layout2 .about__img {
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
+  margin-bottom: 40px;
 }
 
 .about-layout2 .list-items {
