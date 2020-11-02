@@ -69,12 +69,14 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #0e2b5c;
+  /* background-color: #0e2b5c; */
+  background-color: var(--footer-diff);
   color: #ffffff;
 }
 
 ::selection {
-  background-color: #0e2b5c;
+  /* background-color: #0e2b5c; */
+  background-color: var(--footer-diff);
   color: #ffffff;
 }
 
@@ -876,6 +878,10 @@ select {
   background-color: #0e2b5c !important;
 }
 
+.footer-primary.bg-primary {
+  background-color: var(--footer-diff) !important;
+}
+
 .bg-secondary {
   background-color: rgb(0, 0, 0) !important;
 }
@@ -1269,14 +1275,23 @@ h6 {
   line-height: 23px;
   border-radius: 50%;
   text-align: center;
-  background-color: #0e2b5c;
+  /* background-color: #0e2b5c; */
   color: #ffffff;
   margin-right: 8px;
 }
 
 .btn:not(.btn__link):hover i {
   background-color: #ffffff;
-  color: #0e2b5c;
+  /* color: #0e2b5c; */
+}
+
+.about-hero .btn .icon-arrow-right1 {
+  /* background-color: #000000; */
+  background-color: #ff0000;
+}
+
+.about-hero .btn:not(.btn__link):hover i {
+  color: #000000;
 }
 
 .btn i {
@@ -1344,6 +1359,10 @@ h6 {
   background-color: #0e2b5c;
 }
 
+.explore-all.btn__primary.btn__bordered:before {
+  background-color: #000000;
+}
+
 .btn__secondary {
   background-color: #000000;
   color: #ffffff;
@@ -1385,7 +1404,7 @@ h6 {
 
 .btn__white {
   background-color: #ffffff;
-  color: #0b2653;
+  color: #000000;
 }
 
 .btn__white:hover {
@@ -1439,6 +1458,10 @@ h6 {
 
 .btn__link.btn__secondary {
   color: #0e2b5c;
+}
+
+.about-blog .btn__link.btn__secondary {
+  color: #000000;
 }
 
 .btn__link.btn__secondary:hover {
@@ -1572,28 +1595,40 @@ label.error {
 
 .form-control:focus {
   background-color: transparent;
-  border-color: #0e2b5c;
+  /* border-color: #0e2b5c; */
+  border-color: var(--theme-black);
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #51668a;
+  /* color: #51668a; */
+  color: var(--theme-black);
 }
 
 .form-control:-moz-placeholder {
-  color: #51668a;
+  /* color: #51668a; */
+  color: var(--theme-black);
 }
 
 .form-control::-moz-placeholder {
-  color: #51668a;
+  /* color: #51668a; */
+  color: var(--theme-black);
 }
 
 .form-control:-ms-input-placeholder {
-  color: #51668a;
+  /* color: #51668a; */
+  color: var(--theme-black);
 }
 
 textarea.form-control {
   min-height: 105px;
   padding-top: 10px;
+  color: var(--theme-black);
+}
+
+textarea.form-control::-webkit-input-placeholder, 
+textarea.form-control:-moz-placeholder, 
+textarea.form-control:-ms-input-placeholder {
+  color: var(--header-subtitle);
 }
 
 .form__title {
@@ -1667,7 +1702,8 @@ textarea.form-control {
 
 .nice-select .current {
   line-height: 55px;
-  color: #51668a;
+  /* color: #51668a; */
+  color: var(--header-subtitle);
 }
 
 /* Extra Small Devices */
@@ -3126,7 +3162,7 @@ textarea.form-control {
 
 .footer .footer-contact__phone i {
   font-size: 20px;
-  color: #3e4ab4;
+  color: #ff0000;
   margin-right: 15px;
 }
 
@@ -3140,11 +3176,11 @@ textarea.form-control {
 .footer .btn__icon {
   font-size: 15px;
   font-weight: 700;
-  color: #fdb900;
+  color: #ff0000;
 }
 
 .footer .btn__icon i {
-  background-color: #fdb900;
+  background-color: #ff0000;
   color: #ffffff;
   width: 30px;
   height: 30px;
@@ -3292,7 +3328,8 @@ textarea.form-control {
 }
 
 .footer-secondary {
-  background-color: #081e45;
+  /* background-color: #081e45; */
+  background-color: #000000;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -3313,20 +3350,21 @@ textarea.form-control {
   margin-right: 15px;
   border-radius: 3px;
   color: #ffffff;
-  background-color: #fdb900;
+  background-color: var(--footer-diff);
 }
 
 .footer-contact__item .footer-contact__text span {
   display: block;
   font-size: 13px;
   line-height: 1;
+  color: var(--header-subtitle);
 }
 
 .footer-contact__item .footer-contact__text strong,
 .footer-contact__item .footer-contact__text a {
   font-size: 14px;
   line-height: 1;
-  color: #51668a;
+  color: #444444;
 }
 
 /* Scroll Top Button */
@@ -5146,7 +5184,8 @@ textarea.form-control {
   left: 0;
   padding-right: 8px;
   padding-left: 8px;
-  background-color: #0e2b5c;
+  /* background-color: #0e2b5c; */
+  background-color: #000000;
 }
 
 .post-item .post-item__meta__cat a {
@@ -5157,7 +5196,8 @@ textarea.form-control {
 }
 
 .post-item .post-item__meta__cat a:hover {
-  color: #fdb900;
+  /* color: #fdb900; */
+  color: #fff;
 }
 
 .post-item .post-item__meta__cat a:after {
@@ -5180,6 +5220,7 @@ textarea.form-control {
   display: block;
   font-size: 14px;
   margin-bottom: 10px;
+  color: var(--header-subtitle);
 }
 
 .post-item .post-item__title {
@@ -5189,17 +5230,18 @@ textarea.form-control {
 }
 
 .post-item .post-item__title a {
-  color: #0b2653;
+  color: #000000;
 }
 
 .post-item .post-item__title a:hover {
-  color: #fdb900;
+  color: #ff0000;
 }
 
 .post-item .post-item__desc {
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 0;
+  color: var(--header-subtitle);
 }
 
 .post-item .btn__link {
@@ -5219,7 +5261,7 @@ textarea.form-control {
   width: 22px;
   height: 22px;
   line-height: 22px;
-  background-color: #0e2b5c;
+  background-color: #000000;
   color: #ffffff;
   border-radius: 50%;
   margin-right: 8px;
@@ -5227,12 +5269,16 @@ textarea.form-control {
   transition: all 0.5s linear;
 }
 
+.about-blog .post-item .btn__link i {
+  background-color: #ff0000;
+}
+
 .post-item:hover .btn__link {
-  color: #fdb900;
+  color: #ff0000;
 }
 
 .post-item:hover .btn__link i {
-  background-color: #fdb900;
+  background-color: #ff0000;
 }
 
 /* Blog Sigle */
@@ -5722,7 +5768,13 @@ textarea.form-control {
 .contact-panel .contact-panel__desc {
   font-size: 15px;
   line-height: 25px;
+  color: var(--header-subtitle);
 }
+
+/* .contact-layout1 .contact-panel__form input::placeholder, 
+.contact-layout1 .contact-panel__form textarea::placeholder {
+  color: var(--theme-black);
+} */
 
 .contact-layout1 .contact-panel {
   -webkit-box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.1);
@@ -6846,7 +6898,7 @@ textarea.form-control {
     padding-top: 0 !important;
   }
   .banner-layout1 .inner-padding {
-    padding: 100px 30px 0 !important;
+    padding: 100px 30px 20px !important;
     text-align: center;
   }
   .banner-layout1 .cta-banner {
@@ -7072,7 +7124,8 @@ textarea.form-control {
 -------------------------*/
 .work-process {
   overflow-x: hidden;
-  padding-bottom: 290px;
+  padding-bottom: 250px;
+  background: var(--theme-black);
 }
 
 .work-process .process-items-wrapper {
@@ -7105,7 +7158,7 @@ textarea.form-control {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 4px white;
           box-shadow: 0 0 0 4px white;
-  background-color: #fdb900;
+  background-color: var(--theme-red);
 }
 
 .process-item .process-item__icon {
