@@ -975,11 +975,15 @@ h6 {
   position: relative;
   font-size: 15px;
   font-weight: 700;
-  color: var(--header-subtitle);
-  /* color: var(--theme-red); */
+  color: var(--theme-red);
   display: block;
   margin-bottom: 18px;
 }
+
+/* .about-layout2 .heading__subtitle, .portfolio-grid .heading__subtitle, 
+.work-process .heading__subtitle, .blog-grid .heading__subtitle {
+  color: var(--header-subtitle);
+} */
 
 .heading__title {
   position: relative;
@@ -1881,9 +1885,12 @@ textarea.form-control {
   text-align: center;
   border-radius: 50%;
   color: #ffffff;
-  background-color: var(--theme-red);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.list-items.about li:before {
+  background-color: var(--theme-red);
 }
 
 .list-items-white li {
@@ -3189,6 +3196,10 @@ textarea.form-control {
   border-radius: 4px;
 }
 
+.about .footer-widget__newsletter__form {
+  background-color: var(--theme-red);
+}
+
 .footer-widget__newsletter__form .form-control {
   border: 1px solid white;
   color: #f9f9f9;
@@ -3221,6 +3232,10 @@ textarea.form-control {
 
 .footer-widget__newsletter__form .btn:hover {
   color: #fdb900;
+}
+
+.about .footer-widget__newsletter__form .btn:hover {
+  color: var(--theme-black);
 }
 
 .footer-widget__newsletter__form .btn:before {
@@ -3329,18 +3344,19 @@ textarea.form-control {
   font-size: 18px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #0e2b5c;
+  background-color: rgb(38, 38, 38);
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 #scrollTopBtn:hover {
-  background-color: #222222;
+  background-color: var(--theme-red);
 }
 
 #scrollTopBtn.actived {
-  right: 30px;
+  /* right: 30px; */
+  right: 20px;
   opacity: 1;
 }
 
@@ -3427,6 +3443,9 @@ textarea.form-control {
   border-radius: 2px;
   position: relative;
 }
+.core-values .cta-banner {
+  background-color: var(--theme-red);
+}
 
 .cta-banner .cta-banner__title {
   font-size: 17px;
@@ -3435,6 +3454,12 @@ textarea.form-control {
 
 .cta-banner .cta-banner__subtitle {
   color: #ffffff;
+}
+
+.cta-banner .cta-banner__subtitle i {
+  font-size: 20px;
+  position: relative;
+  bottom: 1rem;
 }
 
 .cta-banner .cta-banner__icon {
@@ -3973,7 +3998,7 @@ textarea.form-control {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #fdb900;
+  background-color: var(--theme-red);
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
@@ -3998,6 +4023,64 @@ textarea.form-control {
 .feature-item:hover .feature-item__icon {
   -webkit-animation: slideTopDown 1s infinite alternate;
   animation: slideTopDown 1s infinite alternate;
+}
+
+.vision-mission-philosophy .feature-item {
+  height: 240px;
+  position: relative;
+}
+
+.vision-mission-philosophy .feature-item .feature-item__desc {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  position: unset;
+  border-bottom: none;
+}
+.vision-mission-philosophy .feature-item .feature-item__desc:after {
+  position: absolute;
+}
+
+.vision-mission-philosophy .feature-item__icon.icons i {
+  font-size: 26px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 2px;
+  background: var(--theme-red);
+  color: #fff;
+}
+
+.vision-mission-philosophy .feature-item:hover .feature-item__icon.icons i {
+  background: var(--theme-black);
+}
+
+.vision-mission-philosophy h5 {
+  color: var(--theme-black);
+}
+
+.core-values h3.heading__title {
+  font-size: 34px;
+}
+
+.core-values .fancybox-item .fancybox-item__icon {
+  color: var(--theme-black);
+  font-size: 26px;
+  margin: auto;
+  border: 1px solid var(--theme-red);
+  height: 20px;
+  width: 20px;
+  border-radius: 20%;
+  padding: 2px;
+}
+
+.core-values .fancybox-item .fancybox-item__content .fancybox-item__title {
+  color: var(--theme-black);
+  font-size: 14px;
+}
+
+.core-values .fancybox-item .fancybox-item__content .fancybox-item__title span {
+  font-size: 34px;
+  color: var(--theme-red);
 }
 
 .feature-item:hover .feature-item__desc:after {
@@ -5921,7 +6004,8 @@ textarea.form-control {
 }
 
 .counter-item .counter {
-  color: var(--theme-red);
+  /* color: var(--theme-red); */
+  color: var(--header-subtitle);
   font-family: "Barlow", sans-serif;
   font-size: 60px;
   font-weight: 600;
@@ -6516,6 +6600,10 @@ textarea.form-control {
   padding: 31px 10px;
 }
 
+.core-values .fancybox-item {
+  width: 150px;
+}
+
 .banner-layout1 .fancybox-item .fancybox-item__icon {
   margin-bottom: 15px;
 }
@@ -6554,7 +6642,8 @@ textarea.form-control {
 }
 
 .banner-layout1 .cta-banner .btn:hover i {
-  color: #fdb900;
+  /* color: #fdb900; */
+  color: var(--theme-black);
   background-color: #ffffff;
 }
 
@@ -6585,6 +6674,10 @@ textarea.form-control {
   background-color: #fdb900;
   height: 55%;
   padding-top: 25%;
+}
+
+.core-values .video__box-text {
+  background-color: var(--theme-black);
 }
 
 .banner-layout1 .video__box-text span {
