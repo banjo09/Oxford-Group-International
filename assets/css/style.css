@@ -7072,3 +7072,12 @@ textarea.form-control {
   }
 }
  
+.btn__yellow {
+  background-color: #fdb900;
+  color: #ffffff;
+}
+
+.btn__yellow:hover {
+  color: #ededed;
+  background-color: #1d1057;
+}
