@@ -3161,14 +3161,14 @@ textarea.form-control:-ms-input-placeholder {
 }
 
 .footer .footer-contact__phone i {
-  font-size: 20px;
+  font-size: 15px;
   color: #ff0000;
   margin-right: 15px;
 }
 
 .footer .footer-contact__phone a {
   font-family: "Barlow", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   color: #ffffff;
 }
@@ -4749,7 +4749,7 @@ textarea.form-control:-ms-input-placeholder {
 .member .member__content-inner {
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: 13px;
   width: 100%;
   opacity: 0;
   -webkit-transition: all 0.5s linear;
